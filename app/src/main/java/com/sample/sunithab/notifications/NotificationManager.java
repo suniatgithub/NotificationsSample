@@ -49,7 +49,7 @@ public class NotificationManager {
 
     public void showSingleNotification(Context context) {
         NotificationCompat.Builder notification = createNotificationBuilder(context,
-                "Simple Notification", "This is just a simple notification!");
+                "Simple Notification", "Here is a simple notification!");
 
         Intent launchIntent = new Intent(context, MainActivity.class);
         launchIntent.setAction(SIMPLE_NOTIFICATION_ACTION);
@@ -240,40 +240,7 @@ public class NotificationManager {
         return replyText;
     }
     */
-
-    /*
-    public void showCustomBothContentViewNotification(Context context) {
-        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.custom_content_layout);
-
-        RemoteViews bigRemoteView = new RemoteViews(context.getPackageName(), R.layout.custom_big_content_layout);
-
-        NotificationCompat.Builder builder = createCustomNotificationBuilder(context);
-        //builder.setCustomContentView(remoteViews)
-         builder.setCustomBigContentView(bigRemoteView)
-                .setStyle(new NotificationCompat.DecoratedCustomViewStyle());
-
-        showNotification(context, builder.build(), 0);
-    }
-
-    public void showCustomMediaViewNotification(Context context) {
-        RemoteViews remoteViews = new RemoteViews(context.getPackageName(), R.layout.custom_content_layout);
-
-        NotificationCompat.Builder builder = createCustomNotificationBuilder(context);
-        builder.setCustomContentView(remoteViews)
-                .setStyle(new Notification.DecoratedMediaCustomViewStyle());
-
-        showNotification(context, builder.build(), 0);
-    }
-
-
-    public NotificationCompat.Builder createCustomNotificationBuilder(Context context) {
-        return new NotificationCompat.Builder(context)
-                .setSmallIcon(R.drawable.ic_notification_1)
-                .setAutoCancel(true);
-    }
-    */
-
-    /*
+/*
     private NotificationCompat.Builder getSummaryNotification(Context context) {
 
         NotificationCompat.Builder summary = createNotificationBuilder(
