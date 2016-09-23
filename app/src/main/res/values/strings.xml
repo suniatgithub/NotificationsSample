@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Notifications Sample</string>
+    <string name="notification_handler">Notification Handler</string>
+
+    <string name="single_notification">Simple notification</string>
+    <string name="bundled_notification">Bundled notifications</string>
+    <string name="direct_reply_notification">Notification with actions</string>
+
+</resources>
